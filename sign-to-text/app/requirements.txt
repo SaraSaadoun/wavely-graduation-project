@@ -1,0 +1,6 @@
+Flask==3.0.3
+numpy==1.23.5
+tensorflow==2.13.0
+matplotlib==3.7.1
+mediapipe==0.10.9
+opencv-contrib-python==4.7.0.72
