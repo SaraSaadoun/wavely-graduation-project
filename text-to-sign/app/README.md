@@ -27,8 +27,8 @@
   Replace **REPLACE_THIS** with your actual PostgreSQL password.
 
 4. **Install Python Dependencies**
-  - Open a terminal or command prompt and navigate to your project directory.
-  - Run the following command to install dependencies from requirements.txt:
+   - Open a terminal or command prompt and navigate to your project directory.
+   - Run the following command to install dependencies from requirements.txt:
   ```bash
   pip install -r requirements.txt
   ```
@@ -36,7 +36,10 @@
 ```bash
 python -m spacy download en_core_web_sm
 ```
-6. **Populate Database and Run Flask App**
+6. **Download Our Preprocessed Videos**
+   - Download the word-level skeleton dataset from our [GitHub organization](https://github.com/Wavely-project/text_to_sign/tree/main/videos).
+   - Place the dataset directly inside the `app` directory.
+7. **Populate Database and Run Flask App**
    Populate the PostgreSQL database with word embeddings by running:
 ```bash
 python fill_db.py
