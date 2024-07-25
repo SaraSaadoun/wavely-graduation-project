@@ -17,26 +17,27 @@
 This project involves classifying sign language words from video inputs and using a pre-trained large language model (LLM) to form coherent sentences by understanding the context. The project also includes converting text into sign language video representations through an advanced pipeline that combines offline video processing with NLP techniques, real-time semantic search, and video concatenation techniques.
 
 ### Sign to Text
-Our approach involves initially classifying words within sign language videos. Due to the differences in grammatical structures between sign language and the target language, we employed a pre-trained large language model (LLM) to understand the context of the input. This model helps in forming coherent sentences using the classified words, facilitated through few-shot prompting techniques.
+Our approach involves initially classifying words within sign language videos🖐️📹. Due to the differences in grammatical structures between sign language and the target language, we employed a pre-trained large language model (LLM) to understand the context of the input. This model helps in forming coherent sentences using the classified words, facilitated through few-shot prompting techniques🎯.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/bca12acf-7760-468e-bd6b-a4e860c48c67" alt="Sign to text pipeline" />
 </p>
+
 This module utilizes `MediaPipe` for accurate keypoint estimation of facial landmarks, poses, and hand gestures to interpret sign language gestures. The pipeline includes:
 
 ![sign to word pipeline](https://github.com/user-attachments/assets/279a8b95-b874-425f-91b1-d849f20875a1)
 
-Various deep learning models, including LSTM, Transformers, and others, were evaluated. We ultimately selected the LSTM model for its consistent performance in avoiding overfitting and maintaining high accuracy.
+Various deep learning models, including LSTM, Transformers, and others, were evaluated🔍📈. We ultimately selected the LSTM model for its consistent performance in avoiding overfitting and maintaining high accuracy🏆.
 
 ### Text to Sign
 
 This module converts user-submitted sentences into concatenated video representations of sign language. The process is divided into two phases:
 ![text to sign phases](https://github.com/user-attachments/assets/3e7022ca-3587-4c58-aabf-7913f1300a47)
 
-- **`Offline Phase`**:
+-  🛠️ **`Offline Phase`**:
   - Convert videos into abstract skeleton representations.
   - Encode the processed words into high-dimensional vectors, facilitating efficient semantic search in the online phase.
-- **`Online Phase`**:
+-  🌐 **`Online Phase`**:
   - Retrieving and assembling skeleton videos into signing sequences using **NLP techniques**, **semantic search**, and **video processing tools**.
   
 #### Offline Phase: 
@@ -116,7 +117,7 @@ This module converts user-submitted sentences into concatenated video representa
 - **`moviepy`**: Video editing with Python 
 - **`python-dotenv`**: Read environment variables from a .env file
 - **`language-tool-python`**: Grammar, style, and spelling checker
-- **`transformers: Library`** for state-of-the-art natural language processing
+- **`transformers`**: Library for state-of-the-art natural language processing
 
 
 
