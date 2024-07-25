@@ -5,6 +5,7 @@ This Flask app utilizes a trained model for sign language recognition using Medi
 ## Setup Instructions
 
 1. Clone the repository:
+
    ```bash
    git clone <repo-url>
    cd <repo-directory>
@@ -18,6 +19,7 @@ This Flask app utilizes a trained model for sign language recognition using Medi
 <!--  Download the trained model (`model_lstm_6_classes_0.98.h5`) and place it in the root directory of the project.-->
 
 3. Run the Flask app:
+
    ```bash
    python app.py
    ```
@@ -25,18 +27,13 @@ This Flask app utilizes a trained model for sign language recognition using Medi
 4. Access the app in your browser at `http://localhost:3000`.
 
 ## Usage
+
 1. Visit the app in your browser.
 2. Upload a video file.
 3. Wait for the app to process the video and display the predicted actions.
 4. Interpret the predictions based on the recognized actions.
-   
-**Note:** The model currently recognizes the following 6 classes of actions:
-- Drink
-- Eat
-- Goodbye
-- Hello
-- Help
-- How are you
+
+**Note:** The model currently recognizes 29 classes of actions.
 
 ## Dependencies
 
@@ -46,8 +43,6 @@ This Flask app utilizes a trained model for sign language recognition using Medi
 - Matplotlib
 - MediaPipe
 - OpenCV (opencv-python-headless)
-
-
 
 ## File Structure
 
