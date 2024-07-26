@@ -20,19 +20,25 @@ This project involves classifying sign language words from video inputs and usin
 Our approach involves initially classifying words within sign language videos🖐️📹. Due to the differences in grammatical structures between sign language and the target language, we employed a pre-trained large language model (LLM) to understand the context of the input. This model helps in forming coherent sentences using the classified words, facilitated through few-shot prompting techniques🎯.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/bca12acf-7760-468e-bd6b-a4e860c48c67" alt="Sign to text pipeline" />
+  <img src="https://github.com/user-attachments/assets/5257fa66-4cb1-4f2b-8b0d-2494a74c1637" alt="Sign to text pipeline" />
 </p>
+
 
 This module utilizes `MediaPipe` for accurate keypoint estimation of facial landmarks, poses, and hand gestures to interpret sign language gestures. The pipeline includes:
 
-![sign to word pipeline](https://github.com/user-attachments/assets/279a8b95-b874-425f-91b1-d849f20875a1)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/7f441c58-5319-4f71-b98d-595bfddce047" alt="Sign to words pipeline" />
+</p>
 
 Various deep learning models, including LSTM, Transformers, and others, were evaluated🔍📈. We ultimately selected the LSTM model for its consistent performance in avoiding overfitting and maintaining high accuracy🏆.
 
 ### Text to Sign
 
 This module converts user-submitted sentences into concatenated video representations of sign language. The process is divided into two phases:
-![text to sign phases](https://github.com/user-attachments/assets/3e7022ca-3587-4c58-aabf-7913f1300a47)
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/a88161c3-48a3-4d89-991a-6aa330459480" alt="text to sign phases" />
+</p>
 
 -  🛠️ **`Offline Phase`**:
   - Convert videos into abstract skeleton representations.
@@ -46,7 +52,10 @@ This module converts user-submitted sentences into concatenated video representa
   - A pre-trained model (all-MiniLM-L6-v2) is used to encode the 2000 words - we have processed videos for - into high dimensional vectors which are called `word embeddings`.
 #### Online Phase:
 - The input text is processed as follows to get the corresponding sign language video:
-![online phase pipeline](https://github.com/user-attachments/assets/0896f5d8-ae77-4cdd-915e-9325c3f0c140)
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/936461db-eb46-4fa8-9833-0340120b98bd" alt="[online phase pipeline" />
+</p>
 
 ##### 🔑 Key Functionalities
 
