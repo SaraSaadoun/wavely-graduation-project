@@ -9,9 +9,14 @@
   <h3 align="center">  Intelligent Collaboration Platform for Seamless Communication with Dedicated Support for Sign Language Accessibility</h3>
 <hr>
 <h2> Table of content </h2>
+<li><a href="#0">Demo video</a></li>
 <li><a href="#1">Overview</a> </li>
 <li><a href="#2">Project Structure</a></li>
 <li><a href="#3">Built Using</a></li>
+
+<h2 id ="0">Demo video</h2>
+
+https://github.com/user-attachments/assets/4f29ba7b-af81-4e11-8a37-5092f60f4abd
 
 <h2 id ="1"> Overview </h2>
 This project involves classifying sign language words from video inputs and using a pre-trained large language model (LLM) to form coherent sentences by understanding the context. The project also includes converting text into sign language video representations through an advanced pipeline that combines offline video processing with NLP techniques, real-time semantic search, and video concatenation techniques.
